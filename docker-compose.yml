@@ -7,7 +7,7 @@ services:
         container_name: maria_app
         environment:
             MARIADB_ROOT_PASSWORD: root
-            MARIADB_DATABASE: fruit
+            MARIADB_DATABASE: <db_name>
             MARIADB_USER: developer
             MARIADB_PASSWORD: developer
         ports:
@@ -20,8 +20,8 @@ services:
         build:
             context: .
             dockerfile: ./src/main/docker/Dockerfile.jvm
-        image: fruit:dev
-        container_name: fruit-api-dev
+        image: <api_name>:dev
+        container_name: <api_name>-api-dev
         depends_on: 
             - db
         ports: 
