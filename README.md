@@ -1,4 +1,4 @@
-# Skeleton Quarkus basic
+# Skeleton Quarkus MariaDB
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
